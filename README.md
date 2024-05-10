@@ -1,40 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Link video: https://youtu.be/EqVhOeIWP14
 
-## Getting Started
+Link publicare: https://cloud-computing-project-wine.vercel.app/
 
-First, run the development server:
+1.	Introducere
+   
+Proiectul este alcatuit dintr-o aplicatie web care permite gestionarea todo-urilor, oferind functionalitati precum crearea, vizualizarea, modificarea si stergerea acestora. Aplicatia este dezvoltata folosind tehnoogia NextJS, iar stocarea datelor in backend a fost realizata utilizand servicul cloud oferit de MongoDB. Aplicatia a fost hostata utilizand serviciul de deployment oferit de Vercel.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. 	Descriere problema
+   
+Solutia dezvoltata vine in ajutorul persoanelor care vor sa beneficieze de o buna organizare a diferitelor notite. Aplicatia ofera o inerfata usor de folosit, cu un design placut si permite gestionarea cu usurinta a notitelor.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3.	Descriere API
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Aplicatia permite utilizatorului accesul la functionalitatile sale prin 3 rute:
+-	Ruta de home page, care este alcatuita dintr-un meniu de navigare si un landing page cu informatii despre aplicatie.
+-	Ruta de creare a unui todo (/create-todo) ofera utilizatorului posibilitatea de a crea o nota de todo prin intermedul unui formular.
+-	Ruta de listare a todo-urilor (/todos) afiseaza utilizatorului o lista cu toate todo-urile sale, separate pe mai multe pagini, fiecare pagina fiind alcatuita din 3 todo-uri.
+  
+4.	Flux de date
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+•	Exemplu de request/response
+ ![image](https://github.com/georgeg2u/CloudComputingProject/assets/79796049/4a788014-4a39-4262-9a8a-41e4ed83ef1b)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+•	Metode HTTP
+Metodele folosite in dezvoltarea aplicatiilor sunt cele ce definesc operatiilor CRUD (Create, Read, Update, Delete):
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+GET – pentru afisarea tuturor todo-urilor din backend 
 
-## Learn More
+POST – pentru crearea unui nou todo
 
-To learn more about Next.js, take a look at the following resources:
+PUT – pentru modificarea unui todo existent
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+DELETE – pentru stergerea unui todo
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+5.	Capturi ecran aplicatie
+-Home Page:
+![image](https://github.com/georgeg2u/CloudComputingProject/assets/79796049/baef7e6c-69ab-4104-a711-b0d551b9e490)
 
-## Deploy on Vercel
+-Pagina de creare todo:
+ ![image](https://github.com/georgeg2u/CloudComputingProject/assets/79796049/4a81a207-6efc-4654-aa9e-8d12084bcd0f)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-Pagina de afisare a todo-urilor:
+ ![image](https://github.com/georgeg2u/CloudComputingProject/assets/79796049/a5a4b7b5-0ae4-41cf-a70d-b57acf15783c)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
